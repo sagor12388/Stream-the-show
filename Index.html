@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Stream The Show</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="firebase-config.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🎬 Stream The Show</h1>
+  </header>
+  <main id="movie-list"></main>
+
+  <div id="player-modal" class="hidden">
+    <div id="player">
+      <button onclick="closePlayer()">✖ Close</button>
+      <iframe id="video-frame" class="hidden" frameborder="0" allowfullscreen></iframe>
+      <video id="video-tag" class="hidden" controls width="100%" height="400"></video>
+    </div>
+  </div>
+</body>
+</html>
